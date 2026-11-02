@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-02 17:12:05 by laphampai-->
+<display version="2.0.0">
+  <name>RXR Image</name>
+  <width>900</width>
+  <widget type="image" version="2.0.0">
+    <name>RXR Image</name>
+    <pv_name>$(P)$(V)ArrayData</pv_name>
+    <x>80</x>
+    <y>20</y>
+    <width>748</width>
+    <height>576</height>
+    <x_axis>
+      <visible>true</visible>
+      <title>X</title>
+      <minimum>0.0</minimum>
+      <maximum>748.0</maximum>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+    </x_axis>
+    <y_axis>
+      <visible>true</visible>
+      <title>Y</title>
+      <minimum>0.0</minimum>
+      <maximum>576.0</maximum>
+      <title_font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </scale_font>
+    </y_axis>
+    <data_width>748</data_width>
+    <data_height>576</data_height>
+    <color_mode>3</color_mode>
+    <unsigned>true</unsigned>
+  </widget>
+</display>
