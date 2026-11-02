@@ -87,3 +87,9 @@ Optimized Pytlon
 Permission in memory
 	sudo bash -c 'echo "* hard memlock unlimited" >> /etc/security/limits.conf'
 	sudo bash -c 'echo "* soft memlock unlimited" >> /etc/security/limits.conf'
+
+
+BOB Files
+1) ADBase_Viewer.bob (main bob)
+2) NDStdArrays.bob (for configure output files)
+3) Image Viewver.bob (image viewer)
