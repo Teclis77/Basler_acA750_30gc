@@ -1,0 +1,34 @@
+#RELEASE Location of external products
+# Run "gnumake clean uninstall install" in the application
+# top directory each time this file is changed.
+
+SUPPORT=$(EPICS_BASE)/synApps_6_3/support
+ASYN=$(SUPPORT)/asyn-R4-44-2
+STREAM=$(SUPPORT)/StreamDevice-2-8-24
+CALC=$(SUPPORT)/calc-R3-7-5
+AREA_DETECTOR=$(SUPPORT)/areaDetector-R3-12-1
+ADCORE=$(AREA_DETECTOR)/ADCore
+ADSUPPORT=$(AREA_DETECTOR)/ADSupport
+BUSY=$(SUPPORT)/busy-R1-7-4
+AUTOSAVE=$(SUPPORT)/autosave-R5-11
+SSCAN=$(SUPPORT)/sscan-R2-11-6
+DEVIOCSTATS=$(SUPPORT)/iocStats-3-1-16
+MCA=$(SUPPORT)/mca-R7-10
+
+# If using the sequencer, point SNCSEQ at its top directory:
+#SNCSEQ = $(MODULES)/seq-ver
+SNCSEQ = $(SUPPORT)/sequencer-mirror-R2-2-9
+
+# EPICS_BASE should appear last so earlier modules can override stuff:
+EPICS_BASE = /home/xlabsrv2/epics
+
+
+#ADPYLON=$(TOP)/../..
+ADPYLON=$(AREA_DETECTOR)/ADPylon
+ADGENICAM=$(AREA_DETECTOR)/ADGenICam
+
+#-include $(TOP)/../../../configure/RELEASE_PRODS_INCLUDE
+-include $(AREA_DETECTOR)/configure/RELEASE_PRODS_INCLUDE
+-include $(TOP)/RELEASE.local
+-include $(TOP)/configure/RELEASE.local
+
